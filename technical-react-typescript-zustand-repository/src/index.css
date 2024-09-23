@@ -1,0 +1,12 @@
+.accordion-title.active{
+  background-color: red;
+  color:#fff;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon.animated {
+  transform: scale(1.2); /* Example animation */
+}
