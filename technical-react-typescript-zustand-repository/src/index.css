@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .accordion-title.active{
   background-color: red;
   color:#fff;
@@ -10,3 +14,27 @@
 .icon.animated {
   transform: scale(1.2); /* Example animation */
 }
+
+/* BlurredBackground.css */
+.background {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://t4.ftcdn.net/jpg/05/47/97/81/360_F_547978128_vqEEUYBr1vcAwfRAqReZXTYtyawpgLcC.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s ease;
+}
+
+.background.blurred {
+  filter: blur(8px);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
