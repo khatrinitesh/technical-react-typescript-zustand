@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root{
+    --primarycolor:rgb(21, 255, 0);
+    --secondarycolor:rgb(55, 199, 103);
+}
+.rootWrapper,.bodyWrapper{
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.appLayout{
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    height: 100vh;
+}
+
+h1{
+    @apply  text-white text-[30px] bg-purple-400 px-[10px] my-[10px] font-bold italic underline
+}
+
+/* Card.css */
+/* .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Animated border */
+  /* .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    animation: borderAnimation 2s infinite;
+  } */
+  
+  /* @keyframes borderAnimation {
+    0% {
+      border-color: transparent;
+    }
+    25% {
+      border-color: #ff6347; 
+    }
+    50% {
+      border-color: #ff4500; 
+    }
+    75% {
+      border-color: #ff6347;
+    }
+    100% {
+      border-color: transparent;
+    }
+  } */
+
+  /* RainAnimation.css */
+
+/* Container to hold the background */
+.rain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  /* Rain effect */
+  /* .rain {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .rain::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 255, 255, 0.1), 0 0 15px rgba(255, 255, 255, 0.2),
+      0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.3);
+    animation: rain-fall 1s linear infinite;
+  } */
+/*   
+  @keyframes rain-fall {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 100%;
+    }
+  } */
+
+  /* ToggleSwitch.css */
+/* .toggle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+  }
+  
+  .toggle {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .switch-circle {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  } */
+   
+
+
+  
+
+  /* Add your CSS styling for the component */
+.qr-scanner-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .qr-reader-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .qr-result {
+    margin-top: 20px;
+  }
+  
+  .zoom-controls {
+    margin-top: 20px;
+  }
+  
+  .zoom-controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
