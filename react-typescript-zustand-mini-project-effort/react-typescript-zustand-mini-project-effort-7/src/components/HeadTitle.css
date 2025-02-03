@@ -1,0 +1,7 @@
+.headTitle{
+    font-family: var(--fontpoppins);
+    font-size: var(--font_md_32);
+    @media (max-width:767px){
+        font-size: var(--font_xs_24);
+    }
+}
