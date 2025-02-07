@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.bodyWrapper,.rootWrapper{
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.appLayout{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+.listNav li .active{
+    color:red;
+}
