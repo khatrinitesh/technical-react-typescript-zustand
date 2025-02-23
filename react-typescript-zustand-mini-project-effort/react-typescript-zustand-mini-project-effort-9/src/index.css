@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.bodyWrapper,.rootWrapper{
+  height:100dvh;
+  min-height: 100dvh;
+}
+
+.appLayout{
+  display: grid;
+  grid-template-rows:auto 1fr auto;
+  height: 100dvh;
+}
